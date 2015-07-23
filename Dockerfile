@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
 RUN apt-get update
-RUN apt-get install nmap
+RUN -f apt-get install nmap
 
 ENTRYPOINT ["nmap"]
